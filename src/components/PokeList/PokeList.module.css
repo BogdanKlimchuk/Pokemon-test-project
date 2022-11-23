@@ -1,0 +1,9 @@
+.list{
+    width: fit-content;
+    border: 1px solid black;
+    background: #7fad89;
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}

@@ -1,0 +1,33 @@
+.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    background-color: var(--dark-color-b);
+}
+
+li {
+    float: left;
+}
+
+li p {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.floatRight{
+    float: right;
+}
+
+li p:hover {
+    cursor: pointer;
+    background-color: var(--success-color);
+}

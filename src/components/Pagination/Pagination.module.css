@@ -1,0 +1,6 @@
+.pagination {
+    display: inline-block;
+    margin: 20px;
+    list-style-type: none;
+    padding: 0;
+}
