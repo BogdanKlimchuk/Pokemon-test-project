@@ -7,15 +7,18 @@ const NavBar = () => {
     const navigate = useNavigate();
 
     return (
-        <ul className={classes.navbar}>
-            <li><p onClick={
-                () => navigate(HOME_ROUTE)
-            }>Home</p></li>
-            <li><p>News</p></li>
-            <li><p>Contact</p></li>
-            <li className={classes.floatRight}><p>Login</p></li>
-            <li className={classes.floatRight}><p>About</p></li>
-        </ul>
+        <nav>
+            <ul className={classes.navbar}>
+                <li><p onClick={
+                    () => navigate(HOME_ROUTE)
+                }>Home</p></li>
+                <li><p>News</p></li>
+                <li><p>Contact</p></li>
+                <li className={classes.floatRight}><p>Login</p></li>
+                <li className={classes.floatRight}><p>About</p></li>
+            </ul>
+        </nav>
+
     );
 };
 

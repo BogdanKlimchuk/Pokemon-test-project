@@ -1,6 +1,6 @@
 import React from 'react';
-import classes from './Spiner.module.css'
-const Spiner = () => {
+import classes from './Loading.module.css'
+const Loading = () => {
     return (
             <div className={classes.item}>
                 <i className={classes.loader}></i>
@@ -19,4 +19,4 @@ const Spiner = () => {
     );
 };
 
-export default Spiner;
+export default Loading;

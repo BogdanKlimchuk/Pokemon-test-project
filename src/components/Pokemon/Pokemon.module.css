@@ -1,11 +1,72 @@
-.card{
-    border: 1px solid #000;
-    width: 150px;
-    height: 200px;
+:root {
+    --color1: #fac;
+    --color2: #ddccaa;
+
+    /*--charizardfront: url(https://assets.codepen.io/13471/charizard-gx.webp);*/
+    /*--pika1: #54a29e;*/
+    /*--pika2: #a79d66;*/
+    /*--pikafront: url(https://assets.codepen.io/13471/pikachu-gx.webp);*/
+    /*--eevee1: #efb2fb;*/
+    /*--eevee2: #acc6f8;*/
+    /*--eeveefront: url(https://assets.codepen.io/13471/eevee-gx.webp);*/
+    /*--mewtwo1: #efb2fb;*/
+    /*--mewtwo2: #acc6f8;*/
+    /*--mewtwofront: url(https://assets.codepen.io/13471/mewtwo-gx.webp);*/
+}
+
+
+.card {
+    width: 100%;
+    height: 100%;
+    border-radius: 5% / 3.5%;
+
     cursor: pointer;
+
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    touch-action: none;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transform-origin: center;
+}
+
+.card_container:hover {
+    box-shadow:
+            -20px -20px 30px -25px var(--color1),
+            20px 20px 30px -25px var(--color2),
+            -7px -7px 10px -5px var(--color1),
+            7px 7px 10px -5px var(--color2),
+            0 0 13px 4px rgba(255,255,255,0.3),
+            0 55px 35px -20px rgba(0, 0, 0, 0.5);
+}
+
+
+.card_container{
+    width: 200px;
+    height: 260px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 5% / 3.5%;
+
+    box-shadow:
+            -5px -5px 5px -5px var(--color1),
+            5px 5px 5px -5px var(--color2),
+            -7px -7px 10px -5px transparent,
+            7px 7px 10px -5px transparent,
+            0 0 5px 0px rgba(255,255,255,0),
+            0 15px 35px -20px rgba(0, 0, 0, 0.5);
+    padding: 0;
+
+    transition: transform 0.5s ease, box-shadow 0.2s ease;
+    will-change: transform, filter;
+}
+
+.card h3{
+    margin: 0;
 
 
 }

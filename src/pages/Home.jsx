@@ -12,7 +12,6 @@ const Home = () => {
             <main className={'container'}>
                 <PokeList />
                 <Pagination />
-
             </main>
 
             {/*<footer>Footer</footer>*/}

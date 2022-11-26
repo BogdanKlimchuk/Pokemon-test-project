@@ -1,6 +1,6 @@
 import React from 'react';
 import {usePokemon} from "../context/SelectedPokemonContext";
-import Spiner from "../components/UI/Spiner/Spiner";
+import Loading from "../components/UI/Loading/Loading";
 
 
 
@@ -13,7 +13,7 @@ const Info = () => {
             <h2>Info
             </h2>
             <div>
-                <Spiner/>
+                <Loading/>
 
                 {/*{pokemon}*/}
             </div>
