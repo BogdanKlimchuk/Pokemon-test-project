@@ -3,13 +3,13 @@ import axios from "axios";
 
 export function useFetch (url) {
     const [loading, setLoading] = useState(true)
-    const [data, setData] = useState()
-    const [error, setError] = useState()
+    const [data, setData] = useState(null)
+    const [error, setError] = useState(null)
 
     useEffect(() => {
         const controller = new AbortController()
         setLoading(true)
-        setError(undefined)
+        setError(null)
 
         axios.get(url, {
             signal: controller.signal

@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import Pokemon from "../Pokemon/Pokemon";
 import {usePage, usePageUpdate} from "../../context/PageContext";
 import {useFetch} from "../../hooks/useFetch";
@@ -10,19 +10,28 @@ const PokeList = () => {
     const {page} = usePage()
     const {setNewTotalCount} = usePageUpdate()
     const navigate = useNavigate();
-    const [loading, data, error] = useFetch(`${REACT_APP_API_URL}?offset=${page * PER_PAGE}&limit=${PER_PAGE}`)
 
+
+    const [loading, data, error] = useFetch(`${REACT_APP_API_URL}?offset=${page * PER_PAGE}&limit=${PER_PAGE}`)
+    if(error) console.log(error)
+
+
+    // if(data) console.log(data)
+
+
+
+    //
     useEffect(() => {
         if(!loading && data)
             setNewTotalCount(data.count)
         if(!data && error)  {
             navigate(ERROR_ROUTE)}
-    },[loading, data, error])
+    },[data])
 
 
     return (
         <>
-            {data &&
+            {data  &&
                 <div className={classes.list}>
                     {data.results.map(pok =>
                         <Pokemon key ={pok.name} pokemon = {pok}></Pokemon>

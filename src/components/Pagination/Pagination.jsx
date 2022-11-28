@@ -53,13 +53,13 @@ const Pagination = () => {
             <PaginationItem value={0} text={'1'}  total={totalPages}/>
 
             {totalPages && <>
-                {computePages[0] !== 1 &&  <PaginationItem  text={'...'}/>}
+                {/*{computePages[0] !== 1 &&  <PaginationItem  text={'...'}/>}*/}
 
                 {computePages.map(item =>
                     <PaginationItem key = {item} value={item} text={item+1}  total={totalPages}/>
                 )}
 
-                {computePages[computePages.length-1] !== totalPages - 1 &&  <PaginationItem  text={'...'}/>}
+                {/*{computePages[computePages.length-1] !== totalPages - 1 &&  <PaginationItem  text={'...'}/>}*/}
 
                 <PaginationItem value={totalPages} text={`${totalPages + 1}`}  total={totalPages}/>
             </>}

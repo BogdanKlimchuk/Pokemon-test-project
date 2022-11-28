@@ -4,7 +4,8 @@ import Pagination from "../components/Pagination/Pagination";
 import Header from "../components/UI/Header/Header";
 
 const Home = () => {
-    // console.log('render home')
+    console.log('render home')
+
 
     return (
         <div className={'container'}>

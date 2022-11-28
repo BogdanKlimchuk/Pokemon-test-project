@@ -1,7 +1,7 @@
 import React, {useContext, useState} from "react";
 
 
-const PokemonContext = React.createContext({})
+const PokemonContext = React.createContext(null)
 const PokemonUpdateContext = React.createContext({})
 
 export function usePokemon(){
@@ -14,7 +14,7 @@ export function usePokemonUpdate(){
 
 
 export  function PokemonProvider({children}){
-    const [pokemon, setPokemon] = useState({})
+    const [pokemon, setPokemon] = useState(null)
 
     function addPokemon(pok){
         setPokemon(pok)
