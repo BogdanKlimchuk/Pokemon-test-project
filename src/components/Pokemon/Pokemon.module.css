@@ -1,44 +1,71 @@
 :root {
     --color1: #fac;
     --color2: #ddccaa;
+    --grass1: #78c850;
+    --grass2: #9bc487;
+    --poison1: #9a3697;
+    --poison2: #be77bc;
+    --fire1: #f05030;
+    --fire2: #fd8471;
 
-    /*--charizardfront: url(https://assets.codepen.io/13471/charizard-gx.webp);*/
-    /*--pika1: #54a29e;*/
-    /*--pika2: #a79d66;*/
-    /*--pikafront: url(https://assets.codepen.io/13471/pikachu-gx.webp);*/
-    /*--eevee1: #efb2fb;*/
-    /*--eevee2: #acc6f8;*/
-    /*--eeveefront: url(https://assets.codepen.io/13471/eevee-gx.webp);*/
-    /*--mewtwo1: #efb2fb;*/
-    /*--mewtwo2: #acc6f8;*/
-    /*--mewtwofront: url(https://assets.codepen.io/13471/mewtwo-gx.webp);*/
+
 }
 
-
-.card {
-    width: 100%;
-    height: 100%;
+.card_container{
+    width: 200px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 5% / 3.5%;
 
-    cursor: pointer;
+    background: var(--card-color);;
 
-    position: relative;
-    overflow: hidden;
-    z-index: 10;
-    touch-action: none;
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    transform-origin: center;
-}
-
-.card p {
-    margin: 5px;
+    /*border: 3px solid var(--color2);*/
     padding: 0;
 }
 
-.card_container:hover {
+
+
+
+
+
+.card {
+    width: auto;
+    height: 100%;
+    border-radius: 5% / 3.5%;
+    padding: 8px;
+
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    justify-content: space-around;
+
+    box-shadow:
+            -5px -5px 5px -5px var(--color1),
+            5px 5px 5px -5px var(--color2),
+            -7px -7px 10px -5px transparent,
+            7px 7px 10px -5px transparent,
+            0 0 5px 0 rgba(255,255,255,0),
+            0 15px 35px -20px rgba(0, 0, 0, 0.5);
+
+    transition: transform 0.5s ease, box-shadow 0.2s ease;
+    will-change: transform, filter;
+
+
+
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: 50% 50%;*/
+    /*transform-origin: center;*/
+}
+
+.card:hover {
     box-shadow:
             -20px -20px 30px -25px var(--color1),
             20px 20px 30px -25px var(--color2),
@@ -49,29 +76,105 @@
 }
 
 
-.card_container{
-    width: 200px;
-    height: 260px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 5% / 3.5%;
-
-    box-shadow:
-            -5px -5px 5px -5px var(--color1),
-            5px 5px 5px -5px var(--color2),
-            -7px -7px 10px -5px transparent,
-            7px 7px 10px -5px transparent,
-            0 0 5px 0px rgba(255,255,255,0),
-            0 15px 35px -20px rgba(0, 0, 0, 0.5);
-    padding: 0;
-
-    transition: transform 0.5s ease, box-shadow 0.2s ease;
-    will-change: transform, filter;
+.card.grass{
+    --color1: var(--grass1);
+    --color2: var(--grass2);
+}
+.card.poison{
+    --color1: var(--poison1);
+    --color2: var(--poison2);
+}
+.card.fire{
+    --color1: #fac;
+    --color2: #ddccaa;
 }
 
-.card h3{
+
+
+
+
+.flexStretchRow{
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.card p{
     margin: 0;
+    padding: 0;
+}
+
+.cardHeader h3{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+.cardHeader span {
+    font-size: 14.5px;
+}
+.cardHeader span span{
+    margin: 0 3px 0 3px;
+}
 
 
+
+.cardHeader h3:first-letter{
+    text-transform: uppercase;
+}
+
+.cardHeader{
+    margin: 0 10px 0 0;
+    justify-content: space-between;
+}
+
+.pokemonTypes {
+    justify-content: flex-start;
+    margin: 0 0 5px 0;
+}
+.pokemonTypes span{
+    margin: 0 5px 0 0;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+
+
+
+.statsContainer{
+    padding: 5px 0 0 0;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    justify-content: flex-start;
+
+}
+.statsContainer div{
+    font-size: 13px;
+
+}
+
+
+.abilitiesContainer{
+    margin: 5px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+
+
+
+.abilitiesItems{
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: row;
+}
+.abilitiesItems p {
+    margin: 0 5px 0 0 ;
+}
+.abilitiesItems p:first-letter {
+    text-transform: uppercase;
 }

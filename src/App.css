@@ -3,7 +3,8 @@
 :root {
     --dark-color-a: #5db36e;
     --dark-color-b: #7fad89;
-    --light-color: #e6e9ff;
+    --light-color: #f1f5ff;
+    --card-color: #e5e5ff;
     --success-color: #5cb85c;
     --error-color: #d9534f;
 }
@@ -17,6 +18,8 @@ body{
 
 
 }
+
+
 
 
 .container{

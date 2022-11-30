@@ -18,8 +18,8 @@ const Pagination = () => {
     const computePages = useMemo(() => {
         if(!totalPages)
             return []
-        const offset  = 4;
-        const itemsCount = 8
+        const offset  = 5
+        const itemsCount = 9
         if(page < offset)
             return Array.from({ length: (itemsCount - 1) + 1}, (_, i) => 1 + i)
         if(totalPages - page > offset)
