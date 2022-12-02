@@ -7,14 +7,14 @@
     position: sticky;
     top: 0;
 
-    background-color: var(--dark-color-b);
+    background-color: var(--navbar-color);
 }
 
-li {
+.navbar li {
     float: left;
 }
 
-li p {
+.navbar li p {
     display: block;
     color: white;
     text-align: center;
@@ -23,11 +23,11 @@ li p {
     text-decoration: none;
 }
 
-.floatRight{
+.navbar .floatRight{
     float: right;
 }
 
-li p:hover {
+.navbar li p:hover {
     cursor: pointer;
-    background-color: var(--success-color);
+    background-color: var(--navbar-color-hover);
 }

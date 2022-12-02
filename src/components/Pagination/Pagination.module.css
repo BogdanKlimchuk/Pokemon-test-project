@@ -2,5 +2,6 @@
     display: inline-block;
     margin: 20px;
     list-style-type: none;
+    float: left;
     padding: 0;
 }

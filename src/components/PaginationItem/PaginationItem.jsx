@@ -8,7 +8,7 @@ const PaginationItem = ({value, text, total}) => {
 
     return (
             <li className={`${classes.pagination} ${value === page ? classes.active : ''}`}>
-                    <div
+                    <a
                         onClick={
                             (e) => {
                                 e.preventDefault()
@@ -18,7 +18,7 @@ const PaginationItem = ({value, text, total}) => {
                         }
                       >
                        {text}
-                    </div>
+                    </a>
             </li>
     );
 };

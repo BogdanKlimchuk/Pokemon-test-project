@@ -1,6 +1,9 @@
+.pagination{
+    float: left;
+}
 
 
-.pagination div {
+.pagination a {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -11,14 +14,14 @@
     color: black;
 
     cursor: pointer;
-    background-color: #ddd;
+    background-color: var(--background-color2);
     margin: 0 4px 0 4px;
 
     border-radius: 7px;
 }
-.active div {
-    background-color: #4CAF50;
+.active a {
+    background-color: var(--pagination-color);
     color: white;
 }
 
-.pagination div:hover:not(.active) {background-color: #4CAF50;}
+.pagination a:hover:not(.active) {background-color: var(--pagination-color);}

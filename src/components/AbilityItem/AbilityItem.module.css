@@ -1,0 +1,22 @@
+.abilityItem {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 5px 0 5px 0;
+}
+
+.abilityItem p {
+    margin: 0 5px 0 0;
+}
+
+.abilityItem p:first-letter {
+    text-transform: uppercase;
+}
+
+.abilityItem span {
+    margin: 0 5px 0 0;
+}
+
+.abilityName{
+    font-weight: bold;
+}
