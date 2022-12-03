@@ -1,0 +1,16 @@
+.spritesContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.spritesContainer img{
+    height: 180px;
+    width: auto;
+    margin: 5px 10px 5px 10px;
+}
+
+
+
+
+
+

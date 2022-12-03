@@ -113,20 +113,18 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
 .essentials{
     display: flex;
     flex-direction: row;
     align-items: center;
 
 }
+
+
+
+
+
+
 .imageContainer{
     display: flex;
     flex-direction: column;

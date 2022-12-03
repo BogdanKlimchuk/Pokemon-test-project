@@ -4,7 +4,9 @@ import Header from "../components/UI/Header/Header";
 import {useNavigate} from "react-router-dom";
 import {HOME_ROUTE} from "../utils/consts";
 import Abilities from "../components/Abilities/Abilities";
-import Essentials from "../components/UI/Essentials/Essentials";
+import SectionName from "../components/UI/SectionName/SectionName";
+import Sprites from "../components/Sprites/Sprites";
+import StatsChart from "../components/StatsChart/StatsChart";
 
 
 const Info = () => {
@@ -23,7 +25,7 @@ const Info = () => {
                 <div className={'container'}>
                     <Header tittle={pokemon.name}/>
                     <main className={'infoMain'}>
-                        <Essentials/>
+                        <SectionName text={'Essentials'}/>
                         <div className={'essentials'}>
                             <div className={'imageContainer'}>
                                 <h3>{pokemon.name}</h3>
@@ -47,10 +49,18 @@ const Info = () => {
                                     <div><b>Weight</b> - {pokemon.weight/10}kg</div>
                                 </div>
 
-
                             </div>
                             <Abilities abilities={pokemon.abilities}/>
                         </div>
+
+                        <SectionName text={'Sprites'}/>
+                        <Sprites sprites={pokemon.sprites}/>
+                        <SectionName text={'Stats'}/>
+                        <StatsChart stats={pokemon.stats}/>
+                        {/*<SectionName text={'Moves'}/>*/}
+
+
+
 
 
                     </main>
