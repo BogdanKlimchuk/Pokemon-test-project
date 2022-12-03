@@ -5,17 +5,6 @@ const Loading = () => {
             <div className={classes.item}>
                 <i className={classes.loader}></i>
             </div>
-
-        // <div className={classes.loader}
-        //
-        //
-        //
-        // style={{
-        //     width: size || 50,
-        //     height: size || 50
-        // }}
-        //
-        // ></div>
     );
 };
 

@@ -3,8 +3,6 @@ import {useFetch} from "../../hooks/useFetch";
 import classes from "../AbilityItem/AbilityItem.module.css";
 
 
-
-
 const AbilityItem = ({ability}) => {
 
     const  [loading, abilityData, error] = useFetch(ability.ability.url)
@@ -18,7 +16,6 @@ const AbilityItem = ({ability}) => {
                             className={classes.abilityName}
                         >{abilityData.name}:
                         </p>
-
                         {
                             abilityData.effect_entries.map(item => {
                                 if(item.language.name === 'en')

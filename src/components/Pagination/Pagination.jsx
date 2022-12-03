@@ -6,7 +6,6 @@ import PaginationItem from "../PaginationItem/PaginationItem";
 
 const Pagination = () => {
     const {page, totalCount} = usePage()
-    // console.log('render pages')
 
     const totalPages = useMemo(() => {
         if(!totalCount)

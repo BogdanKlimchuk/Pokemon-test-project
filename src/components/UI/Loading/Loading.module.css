@@ -1,11 +1,10 @@
 .loader {
-    --color: red;
+    --color: var(--border-color);
     --size-mid: 3.15vw;
     --size-dot: 1.5vmin;
     --size-bar: 0.4vmin;
     --size-square: 3vmin;
 
-    display: block;
     position: relative;
     width: 50%;
     display: grid;
@@ -45,6 +44,8 @@
 }
 
 .item	{
+    height: 100px;
+    width: auto;
     display: grid;
     place-items: center;
     border-radius: 4px;

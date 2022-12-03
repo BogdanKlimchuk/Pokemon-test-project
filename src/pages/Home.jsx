@@ -12,8 +12,6 @@ const Home = () => {
                 <PokeList />
                 <Pagination />
             </main>
-
-            {/*<footer>Footer</footer>*/}
         </div>
     );
 };

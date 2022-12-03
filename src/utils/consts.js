@@ -3,6 +3,5 @@ export const PER_PAGE = 15
 
 export const HOME_ROUTE = '/'
 export const POKEMON_INFO_ROUTE = '/info'
-export const ERROR_ROUTE = '/error'
 
 

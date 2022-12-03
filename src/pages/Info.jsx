@@ -7,6 +7,7 @@ import Abilities from "../components/Abilities/Abilities";
 import SectionName from "../components/UI/SectionName/SectionName";
 import Sprites from "../components/Sprites/Sprites";
 import StatsChart from "../components/StatsChart/StatsChart";
+import MovesTable from "../components/MovesTable/MovesTable";
 
 
 const Info = () => {
@@ -16,8 +17,6 @@ const Info = () => {
     useEffect(() => {
         if(!pokemon) navigate(HOME_ROUTE)
     }, [])
-
-    console.log(pokemon)
 
     return (
         <>
@@ -57,7 +56,8 @@ const Info = () => {
                         <Sprites sprites={pokemon.sprites}/>
                         <SectionName text={'Stats'}/>
                         <StatsChart stats={pokemon.stats}/>
-                        {/*<SectionName text={'Moves'}/>*/}
+                        <SectionName text={'Moves'}/>
+                        <MovesTable moves={pokemon.moves}/>
 
 
 

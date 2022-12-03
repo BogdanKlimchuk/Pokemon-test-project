@@ -6,7 +6,7 @@
     justify-content: center;
     border-radius: 5% / 3.5%;
 
-    background: var(--card-color);
+    background: var(--background-color2);
 
     /*border: 3px solid var(--color1);*/
     padding: 0;

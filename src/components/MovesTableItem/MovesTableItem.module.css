@@ -1,0 +1,12 @@
+
+.move{
+    color: #4f96ff;
+    font-weight: bold;
+}
+.move p{
+    margin: 0;
+    padding: 0;
+}
+.move p:first-letter{
+    text-transform: uppercase;
+}
