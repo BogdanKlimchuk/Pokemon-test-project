@@ -41,7 +41,7 @@ const StatsChart = ({stats}) => {
         datasets: [
             {
                 data: stats.map((item)=> item.base_stat),
-                backgroundColor: ['#D8CFFDBE', '#CFE0FDBE', '#CFE0FDBE', '#FDCFF7BE', '#D8CFFDBE', '#FDCFF7BE', '#FDCFF7BE'],
+                backgroundColor: ['#78C850BE', '#C03028BE', '#6890F0BE', '#F08030BE', '#A890F0BE', '#98D8D8BE'],
             }
         ],
     }

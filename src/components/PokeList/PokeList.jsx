@@ -10,7 +10,7 @@ const PokeList = () => {
     const {setNewTotalCount} = usePageUpdate()
 
     const [loading, data, error] = useFetch(`${REACT_APP_API_URL}?offset=${page * PER_PAGE}&limit=${PER_PAGE}`)
-    if(error) console.log(error)
+    // if(error) console.log(error)
 
     useEffect(() => {
         if(!loading && data)

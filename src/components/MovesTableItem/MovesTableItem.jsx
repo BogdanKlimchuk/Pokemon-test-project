@@ -5,6 +5,9 @@ import status from "../../assets/DamageClasses/status.png"
 import special from "../../assets/DamageClasses/special.png"
 import physical from "../../assets/DamageClasses/physical.png"
 
+
+
+
 const MovesTableItem = ({move}) => {
     return (
         <tr>
@@ -35,7 +38,7 @@ const MovesTableItem = ({move}) => {
             <td>{move.power ? move.power : '-'}</td>
             <td>{move.accuracy ? move.accuracy+'%' : '-'}</td>
             <td>{move.priority}</td>
-            <td>{move.effect_entries[0].short_effect}</td>
+            <td>{move.effect_entries.length !== 0 && move.effect_entries[0].short_effect.replaceAll(/\$effect_chance%/ig, '')}</td>
         </tr>
     );
 };

@@ -16,11 +16,12 @@
 
 .navbar li p {
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     margin: 0;
     text-decoration: none;
+    color: #000;
+
 }
 
 .navbar .floatRight{

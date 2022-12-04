@@ -18,6 +18,7 @@ const MovesTable = ({moves}) => {
         ).finally(() => setLoading(false))
     },[])
 
+
     if(loading)  return <Loading/>
 
     return (

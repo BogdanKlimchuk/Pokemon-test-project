@@ -1,7 +1,6 @@
 .abilitiesContainer{
     display: flex;
     flex-direction: column;
-    margin: 20px;
 }
 .abilitiesContainer h3, h4{
     margin: 8px 0 3px 0;

@@ -1,5 +1,5 @@
 .loader {
-    --color: var(--border-color);
+    --color: var(--pagination-color);
     --size-mid: 3.15vw;
     --size-dot: 1.5vmin;
     --size-bar: 0.4vmin;

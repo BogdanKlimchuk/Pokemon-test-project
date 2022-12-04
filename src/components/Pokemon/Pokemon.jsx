@@ -5,6 +5,7 @@ import {POKEMON_INFO_ROUTE} from "../../utils/consts";
 import {usePokemonUpdate} from "../../context/SelectedPokemonContext";
 import Loading from "../UI/Loading/Loading";
 import classes from "./Pokemon.module.css";
+import pokeBall from "../../assets/pokeball.png"
 
 const Pokemon = ({pokemon}) => {
     const [loading, pokemonData] = useFetch(`${pokemon.url}`)
@@ -39,7 +40,7 @@ const Pokemon = ({pokemon}) => {
                             <img
                                 loading='lazy'
                                 key={pokemonData.sprites.front_default}
-                                src={pokemonData.sprites.front_default}
+                                src={pokemonData.sprites.front_default ? pokemonData.sprites.front_default :  pokeBall}
                                 alt='Pokemon image'
                             />
                         </div>

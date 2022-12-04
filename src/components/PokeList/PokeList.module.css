@@ -2,8 +2,8 @@
     width: fit-content;
     display: grid;
     gap: 30px;
-    padding: 30px;
-    background: rgb(0, 0, 0);
+    padding: 10px;
+    background: #191400;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     border-radius: 30px;
 }

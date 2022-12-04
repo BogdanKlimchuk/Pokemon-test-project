@@ -72,6 +72,11 @@
 
 .imageContainer{
     height: 90px;
+    width: auto;
+}
+.imageContainer img{
+    height: 90px;
+    width: auto;
 }
 
 
@@ -103,8 +108,6 @@
 .cardHeader h3:first-letter{
     text-transform: uppercase;
 }
-
-
 
 
 .statsContainer{
